@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Schopenhauer: El Mundo como Voluntad y Representación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primario: #2c3e50;
+            --color-secundario: #8B4513; /* Un marrón siena, serio */
+            --color-fondo: #f4f1ea;
+            --color-texto: #333333;
+            --color-cita: #fdfaf3;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            line-height: 1.7;
+            color: var(--color-texto);
+            background-color: var(--color-fondo);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--color-secundario);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+            header img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 4px solid var(--color-primario);
+            }
+
+            header .title-container {
+                text-align: left;
+            }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--color-primario);
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid var(--color-secundario);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: var(--color-secundario);
+            margin-top: 30px;
+        }
+
+        blockquote {
+            font-family: 'Lora', serif;
+            font-style: italic;
+            font-size: 1.1em;
+            margin: 25px 0;
+            padding: 20px;
+            border-left: 5px solid var(--color-secundario);
+            background-color: var(--color-cita);
+            border-radius: 0 5px 5px 0;
+        }
+
+            blockquote footer {
+                text-align: right;
+                font-style: normal;
+                font-weight: bold;
+                color: var(--color-primario);
+                margin-top: 10px;
+                font-size: 0.9em;
+            }
+
+        a {
+            color: var(--color-secundario);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+            a:hover {
+                color: var(--color-primario);
+                text-decoration: underline;
+            }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+            li::before {
+                content: '»';
+                position: absolute;
+                left: 0;
+                color: var(--color-secundario);
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+
+        .obra-item {
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+            .obra-item strong {
+                font-family: 'Montserrat', sans-serif;
+                color: var(--color-primario);
+            }
+
+        .final-footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Arthur_Schopenhauer_by_Sch%C3%A4fer%2C_1859b.jpg" alt="Retrato de Arthur Schopenhauer">
+            <div class="title-container">
+                <h1>Arthur Schopenhauer</h1>
+                <p style="font-family: 'Montserrat', sans-serif; font-size: 1.2em; color: #555;">(1788 - 1860)</p>
+            </div>
+        </header>
+
+        <main>
+            <section id="biografia">
+                <h2>Biografía de un Pesimista</h2>
+                <p>
+                    Arthur Schopenhauer nació en Danzig (hoy Gdańsk, Polonia) en 1788, en el seno de una familia de comerciantes adinerados. Su vida estuvo marcada por una relación conflictiva con su madre, la escritora Johanna Schopenhauer, y por la herencia de su padre, que le permitió dedicarse a la filosofía sin preocupaciones económicas. Estudió en las universidades de Gotinga y Berlín, donde asistió a las clases de Fichte y Schleiermacher, aunque desarrolló un profundo desdén por los idealistas alemanes de su tiempo, especialmente por Hegel, a quien consideraba un "charlatán".
+                </p>
+                <p>
+                    Su obra magna, <strong><em>El mundo como voluntad y representación</em></strong>, publicada en 1818, fue recibida con indiferencia. Frustrado, intentó sin éxito competir con Hegel en la Universidad de Berlín. Pasó la mayor parte de su vida en Frankfurt, en un aislamiento autoimpuesto, acompañado solo por su caniche, Atma. No fue hasta el final de su vida, con la publicación de <strong><em>Parerga y paralipómena</em></strong> (1851), que alcanzó la fama y el reconocimiento que tanto había anhelado. Murió en 1860, convertido en una figura de culto para una nueva generación de pensadores y artistas.
+                </p>
+            </section>
+
+            <section id="pensamiento">
+                <h2>El Pensamiento Filosófico</h2>
+
+                <h3>El Mundo como Voluntad (Nóumeno)</h3>
+                <p>
+                    Para Schopenhauer, la realidad fundamental no es la razón, sino una fuerza ciega, irracional e incesante que llama <strong>la Voluntad</strong> (<em>der Wille</em>). Es un impulso cósmico de existir y perpetuarse que subyace a todo lo que existe, desde la gravedad que mueve los planetas hasta el instinto que guía a los animales y los deseos que atormentan al ser humano. Esta Voluntad es única, eterna y carece de propósito o fin; es puro querer sin motivo.
+                </p>
+                <blockquote>
+                    "La voluntad es un ciego robusto que carga sobre sus hombros a un tullido vidente."
+                    <footer>Parerga y paralipómena</footer>
+                </blockquote>
+
+                <h3>El Mundo como Representación (Fenómeno)</h3>
+                <p>
+                    El mundo que percibimos a través de nuestros sentidos y entendemos con nuestra razón no es la realidad en sí misma, sino una mera <strong>representación</strong> (<em>die Vorstellung</em>). Es el mundo fenoménico, estructurado por el espacio, el tiempo y la causalidad (el principio de razón suficiente). Cada individuo vive en su propio mundo como representación, una construcción de su intelecto al servicio de la Voluntad.
+                </p>
+                <blockquote>
+                    "El mundo es mi representación: esta es una verdad que vale para todo ser viviente y cognoscente, aunque solo el hombre pueda llevarla a la conciencia reflexiva y abstracta."
+                    <footer>El mundo como voluntad y representación, Libro I</footer>
+                </blockquote>
+
+                <h3>El Pesimismo y el Sufrimiento</h3>
+                <p>
+                    Dado que la Voluntad es un deseo perpetuo e insaciable, la vida es, por su propia naturaleza, sufrimiento. El deseo genera dolor por la carencia, y su satisfacción es solo un alivio efímero que rápidamente da paso al aburrimiento o a un nuevo deseo. La felicidad es, en el mejor de los casos, la ausencia temporal de dolor.
+                </p>
+                <blockquote>
+                    "La vida, pues, oscila como un péndulo, hacia atrás y hacia adelante, entre el dolor y el aburrimiento."
+                    <footer>El mundo como voluntad y representación, Libro IV</footer>
+                </blockquote>
+
+                <h3>La Liberación a través del Arte y la Compasión</h3>
+                <p>
+                    Schopenhauer propone dos vías de escape (una temporal y otra definitiva) de la tiranía de la Voluntad.
+                </p>
+                <ul>
+                    <li><strong>El Arte:</strong> La contemplación estética nos permite suspender temporalmente nuestros deseos individuales y observar las "Ideas" platónicas, las formas puras y eternas de las cosas. En ese momento, dejamos de ser un individuo esclavo de la Voluntad para convertirnos en un "puro sujeto de conocimiento". La música es la forma de arte más elevada, pues no representa las Ideas, sino la Voluntad misma.</li>
+                    <li><strong>La Ética de la Compasión y el Ascetismo:</strong> La vía definitiva es la negación de la Voluntad de vivir. Al reconocer que todos los seres son manifestaciones de la misma Voluntad y que el sufrimiento es universal, surge la <strong>compasión</strong>. Esta comprensión metafísica puede llevar al ascetismo: la renuncia voluntaria a los deseos (castidad, pobreza, ayuno) para "apagar" la Voluntad en uno mismo y alcanzar un estado de serenidad similar al nirvana budista.</li>
+                </ul>
+            </section>
+
+            <section id="contexto">
+                <h2>Contexto e Influencias</h2>
+                <h3>Contexto Histórico y Filosófico</h3>
+                <p>Schopenhauer vivió en una época de grandes cambios: las Guerras Napoleónicas, el auge de la burguesía y el Romanticismo. Filosóficamente, su pensamiento es una reacción directa al <strong>Idealismo Alemán</strong> (Fichte, Schelling, Hegel), que dominaba la academia. Mientras ellos veían la Razón como el motor de la historia y la realidad, Schopenhauer postuló una fuerza irracional, la Voluntad. Su filosofía representa un puente entre el idealismo kantiano y el vitalismo y existencialismo posteriores.</p>
+
+                <h3>Influencias Recibidas</h3>
+                <ul>
+                    <li><strong>Platón:</strong> De quien toma la teoría de las Ideas como los modelos eternos de las cosas particulares.</li>
+                    <li><strong>Immanuel Kant:</strong> Su distinción entre fenómeno (lo que podemos conocer) y nóumeno (la cosa-en-sí) es la base de la dualidad Representación/Voluntad de Schopenhauer.</li>
+                    <li><strong>Filosofía Oriental:</strong> Fue uno de los primeros filósofos europeos en integrar seriamente el pensamiento de las <strong>Upanishads</strong> y el <strong>Budismo</strong>, de donde extrajo conceptos como el sufrimiento inherente a la existencia (Dukkha), la compasión y la negación del yo como camino de liberación (Nirvana).</li>
+                </ul>
+
+                <h3>Influencias Ejercidas</h3>
+                <p>Aunque ignorado en vida, su influencia póstuma fue inmensa:</p>
+                <ul>
+                    <li><strong>Friedrich Nietzsche:</strong> Lo consideró su gran "educador", aunque más tarde criticaría su pesimismo y negación de la vida.</li>
+                    <li><strong>Richard Wagner:</strong> Sus óperas, especialmente <em>Tristán e Isolda</em>, están profundamente influenciadas por la metafísica del amor y la muerte de Schopenhauer.</li>
+                    <li><strong>Sigmund Freud:</strong> El concepto de "la Voluntad" es un claro precursor del "ello" y la teoría del inconsciente.</li>
+                    <li><strong>Ludwig Wittgenstein, León Tolstói, Thomas Mann, Jorge Luis Borges, Marcel Proust y Samuel Beckett</strong> son solo algunos de los muchos pensadores y artistas que acusaron su profunda influencia.</li>
+                </ul>
+            </section>
+
+            <section id="obras">
+                <h2>Obras Principales</h2>
+                <p>A continuación, se presentan sus obras más importantes con enlaces a versiones digitales gratuitas en español o, en su defecto, a tiendas en línea.</p>
+                <ul>
+                    <li class="obra-item">
+                        <strong>El mundo como voluntad y representación (1818/1844)</strong>: Su obra capital donde expone el núcleo de su sistema filosófico.
+                        <br>
+                        <a href="https://archive.org/details/elmundocomovolun01scho" target="_blank">[Enlace a Archive.org - Volumen 1 - Gratis]</a>
+                        <br>
+                        <a href="https://archive.org/details/elmundocomovolun02scho" target="_blank">[Enlace a Archive.org - Volumen 2 - Gratis]</a>
+                    </li>
+                    <li class="obra-item">
+                        <strong>Parerga y paralipómena (1851)</strong>: Colección de ensayos y aforismos sobre temas diversos (la vejez, el ruido, las mujeres, la lectura) que le dieron la fama. Incluye los célebres <em>Aforismos sobre el arte de saber vivir</em>.
+                        <br>
+                        <a href="https://archive.org/details/aforismossobreel00scho" target="_blank">[Enlace a "Aforismos..." en Archive.org - Gratis]</a>
+                        <br>
+                        <a href="https://www.amazon.es/s?k=Parerga+y+paralipomena+schopenhauer" target="_blank">[Buscar en Amazon.es]</a>
+                    </li>
+                    <li class="obra-item">
+                        <strong>Sobre la cuádruple raíz del principio de razón suficiente (1813)</strong>: Su tesis doctoral, un trabajo fundamental de epistemología que sienta las bases de su pensamiento.
+                        <br>
+                        <a href="https://www.amazon.es/s?k=Sobre+la+cu%C3%A1druple+ra%C3%ADz+schopenhauer" target="_blank">[Buscar en Amazon.es]</a>
+                    </li>
+                    <li class="obra-item">
+                        <strong>El arte de tener razón (o Dialéctica erística)</strong>: Un pequeño y famoso tratado sobre 38 estratagemas para ganar una discusión, independientemente de si se tiene la razón.
+                        <br>
+                        <a href="https://www.gutenberg.org/ebooks/57343" target="_blank">[Enlace a Project Gutenberg - Gratis]</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="fuentes">
+                <h2>Fuentes y Enlaces Externos</h2>
+                <p>La información de esta página se ha compilado a partir de diversas fuentes académicas y de referencia. Para profundizar en la vida y obra de Schopenhauer, se recomiendan los siguientes recursos:</p>
+                <ul>
+                    <li><a href="https://es.wikipedia.org/wiki/Arthur_Schopenhauer" target="_blank">Arthur Schopenhauer en Wikipedia</a> - Un excelente punto de partida con una visión general completa.</li>
+                    <li><a href="https://plato.stanford.edu/entries/schopenhauer/" target="_blank">Artículo en la Stanford Encyclopedia of Philosophy (en inglés)</a> - Un recurso académico riguroso y detallado.</li>
+                    <li><a href="https://www.academia.edu/search?q=Arthur%20Schopenhauer%20espa%C3%B1ol" target="_blank">Artículos en Academia.edu</a> - Búsqueda de trabajos y ensayos sobre el filósofo en español.</li>
+                    <li><a href="http://www.filosofia.org/bio/plu/schopenh.htm" target="_blank">Schopenhauer en Filosofia.org</a> - Biografía y textos en el Proyecto Filosofía en español.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="final-footer">
+            <p>Página creada en 2024. Un homenaje al filósofo que desveló la Voluntad tras el velo de Maya.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
